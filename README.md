@@ -25,7 +25,7 @@ npm install
 npm start
 ```
 ### Contribuciones
-Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, por favor abre un problema o envía una solicitud de extracción.
+Las contribuciones son bienvenidas. Si tienes sugerencias o mejoras, por favor abre un problema o envía una Pull Request.
 
 ### Licencia
 Este proyecto está bajo la Licencia ISC. Consulta el archivo LICENSE para obtener más detalles.

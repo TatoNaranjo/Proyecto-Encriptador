@@ -38,6 +38,7 @@ function copyText(btn) {
         // Deselecciona el texto
         areaDeTexto.setSelectionRange(0, 0);
 
+        //TODO: Add a animated Notification.
     }
 }
 

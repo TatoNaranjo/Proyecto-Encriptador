@@ -5,7 +5,7 @@ if(document.activeElement === isActive){
     isActive.placeholder = "";
 }
 else {
-    isActive.placeholder = "Ingresa el texto aquí: ...";
+    isActive.placeholder = "Ingresa el texto aquí:";
 }
 
 // Función para evitar que la página se recargue al momento de presionar un botón:
@@ -39,8 +39,15 @@ function copyText(btn) {
         areaDeTexto.setSelectionRange(0, 0);
 
         //TODO: Add a animated Notification.
+        var toast = document.getElementById("toast-success");
+        toast.style.display='flex';
+        setTimeout(() => {
+            toast.style.display = 'none';
+        }, 3000);
     }
+    
 }
+
 
 // Función para encriptar el texto
 

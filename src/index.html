@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./style.css">
     <title>El Encriptador de Tato</title>
 </head>
@@ -52,10 +57,10 @@
                 <textarea id="input-message" rows="4" spellcheck="false"
                     class="box-left outline-none block p-2.5 md:w-96 w-80 text-sm bg-color4 border-solid border-[2px] border-black focus:color1 focus:border-black placeholder:text-color1 text-color1 dark:focus:ring-blue-500 dark:focus:border-color1 resize-none"></textarea>
                 <div class="my-2 py-2">
-                    <button id="button" type="submit" onclick = "actionController()"
+                    <button id="encryptButton" type="submit" onclick = "actionController()"
                         class="button actionButton text-[18px] font-semibold text-color1 bg-color5 p-2 border-solid border-[2px] border-[black] transition duration-300 hover:bg-black hover:text-white">Encriptar
                         Texto</button>
-                    <button id="copyButton" onclick="copyText(this)"
+                    <button id="copyButtonInput" onclick="copyText(this)"
                         class="button text-[18px] font-semibold text-color1 bg-color5 p-2 border-solid border-[2px] border-[black] transition duration-300 hover:bg-black hover:text-white">Copiar
                         Texto</button>
                 </div>
@@ -88,7 +93,7 @@
                 </svg>
                 <span class="sr-only ">Check icon</span>
             </div>
-            <div class="ms-3 text-sm font-normal ">El elemento se ha copiado al portapapeles</div>
+            <div class="ms-3 text-sm font-normal ">El texto se ha copiado al portapapeles</div>
 
         </div>
 

@@ -5,6 +5,7 @@ El Proyecto Encriptador se centra en la implementación de un sistema de encript
 TatoNaranjo | Santiago Naranjo Herrera 
 
 ### Dependencias:
+#### NodeJS: https://nodejs.org/en
 #### Dependencias de Desarrollo
 - Tailwind CSS - 3.4.1
 #### Dependencias Principales

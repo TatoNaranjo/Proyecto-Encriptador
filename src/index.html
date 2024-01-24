@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-color2">
+
+    <header class="header">
+        <nav class="nav m-2 p-2 flex flex-col md:flex-row md:justify-between items-center justify-center h-full">
+            <div class="nav__title text-[28px] flex flex-col md:items-start items-center">
+                <a class='nav__title-logo text-color5 ' href='https://github.com/TatoNaranjo'
+                    alt="Tato's Logo">Tato<span class="nav__logo--variant text-color5">Naranjo</span></a>
+
+                <div class=" flex flex-row sublogo p-0 m-0 inherit top-[-5px]">
+                    <h3 class="text-color5 text-[16px]">Made By: <span class="text-color4">Santiago Naranjo
+                            Herrera</span></h3>
+                </div>
+            </div>
+
+            <ul
+                class="nav-link nav-link-menu text-[20px] items-center flex md:flex-row md:ml-auto md:pt-2 md:pr-[40px] gap-5 py-2">
+                <li class="nav-items text-color5"><a href="#" class="nav-links">Biografía</a></li>
+                <li class="nav-items text-color5"><a href="#" class="nav-links">Mi Visión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="flex items-center justify-center h-[400px] mt-[100px] ">
+        <div class="grid items-center md:grid-cols-2 gap-5 justify-center">
+
+            <form id="button" class="flex flex-col items-center">
+                <label for="message"
+                    class="block mb-2 text-sm font-medium uppercase text-gray-900 dark:text-white">Ingresa el texto que
+                    quieres: </label>
+                <textarea id="input-message" rows="4"
+                    class="box-left outline-none block p-2.5 md:w-96 w-80 text-sm bg-color4 border-solid border-[2px] border-black focus:color1 focus:border-black placeholder:text-color1 text-color1 dark:focus:ring-blue-500 dark:focus:border-color1 resize-none"></textarea>
+                <div class="my-2 py-2">
+                    <button id="button" type="submit"
+                        class="button text-[18px] font-semibold text-color1 bg-color5 p-2 border-solid border-[2px] border-[black] transition duration-300 hover:bg-black hover:text-white">Codificar
+                        Texto</button>
+                    <button id="copyButton" onclick="copyText(this)"
+                        class="button text-[18px] font-semibold text-color1 bg-color5 p-2 border-solid border-[2px] border-[black] transition duration-300 hover:bg-black hover:text-white">Copiar
+                        Texto</button>
+                </div>
+            </form>
+
+
+            <div id="outputSection" class="flex flex-col items-center">
+                <label for="message" class="block mb-2 text-sm font-medium uppercase text-gray-900 dark:text-white">Aquí
+                    tienes tu texto: </label>
+                <textarea id="message" rows="4"
+                    class="box-right outline-none block p-2.5 md:w-96 w-80 text-sm bg-color4 border-solid border-[2px] border-black focus:color1 focus:border-black placeholder:text-color1 text-color1 dark:focus:ring-blue-500 dark:focus:border-color1 resize-none "
+                    placeholder="Aquí estará tu texto codificado/decodificado" readonly></textarea>
+
+                <div class="my-2 py-2">
+                    <button id="copyButton"
+                        class="button copyButton text-[18px] font-semibold text-color1 bg-color5 p-2 border-solid border-[2px] border-[black] transition duration-300 hover:bg-black hover:text-white" onclick="copyText(this)" >Copiar
+                        Texto</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+
+
+    </main>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

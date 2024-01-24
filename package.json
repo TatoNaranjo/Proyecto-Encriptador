@@ -1,0 +1,14 @@
+{
+  "name": "proyecto-encriptador",
+  "version": "1.0.0",
+  "description": "Proyecto de Encriptador como reto del programa Oracle Next Education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TatoNaranjo | Santiago Naranjo Herrera",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

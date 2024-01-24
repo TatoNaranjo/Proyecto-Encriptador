@@ -38,8 +38,6 @@ function copyText(btn) {
         // Deselecciona el texto
         areaDeTexto.setSelectionRange(0, 0);
 
-        // Puedes agregar un mensaje de confirmación o realizar otras acciones después de copiar
-        alert("Texto copiado al portapapeles desde el área de texto " + areaDeTexto.id);
     }
 }
 
